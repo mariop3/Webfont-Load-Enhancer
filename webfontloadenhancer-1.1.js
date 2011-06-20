@@ -279,9 +279,9 @@ EventHelpers.addPageLoadEvent("TypeHelpers.insertClasses");
  */
 
 (function(){
-  // if firefox 3.5+ or Opera 10.5, hide content till load (or 3 seconds) to prevent FOUT
+  // if Firefox 3.x, Internet Explorer or Opera 10.5+, hide content till load (or 3 seconds) to prevent FOUT
   var d = document, e = d.documentElement, s = d.createElement('style');
-  if ( (e.style.MozTransform === '') || (e.style.OTransform === '') ){
+  if ( (navigator.appName = /Firefox\/3/.test(navigator.userAgent)) || (navigator.appName = 'Microsoft Internet Explorer') || (e.style.OTransform === '') ){
     s.textContent = 'body{visibility:hidden}';
     var r = document.getElementsByTagName('script')[0];
     r.parentNode.insertBefore(s, r);
