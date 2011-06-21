@@ -1,5 +1,5 @@
 =========================
-Webfont Load Enhancer 1.1
+Webfont Load Enhancer 1.2
 =========================
 
 A little script mashup by Michael van Laar, using existing JavaScript solutions
@@ -56,12 +56,12 @@ http://www.useragentman.com/blog/2009/11/29/how-to-detect-font-smoothing-using-j
 Installation and usage
 ----------------------
 
-Just use a script element to include webfontloadenhancer-1.1.js (not minified) or
-webfontloadenhancer-1.1.min.js (minified) in the head of your HTML page, just above
+Just use a script element to include webfontloadenhancer-1.2.js (not minified) or
+webfontloadenhancer-1.2.min.js (minified) in the head of your HTML page, just above
 your CSS call.
 
-It will prevent the FOUT (Flash of unstyled text) in Firefox (3.5 and 3.6), Internet
-Explorer and Opera (10.5+) right away. The complete page is hidden until webfonts are
+It will prevent the FOUT (Flash of unstyled text) in Firefox 3.5 and 3.6, Internet
+Explorer 9 and Opera 10.5+ right away. The complete page is hidden until webfonts are
 completely loaded, but for a maximum of three seconds. This should be enough in most
 cases.
 
